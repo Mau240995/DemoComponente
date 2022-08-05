@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Semaforo" customModule="DemoComponente" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="iN0-l3-epB" id="7bk-h2-s2Q"/>
+                <outlet property="objLabel" destination="Ie4-aA-KcA" id="cb8-ob-WwL"/>
+                <outlet property="objPrimero" destination="oAi-TC-RV9" id="Hq9-NL-thW"/>
+                <outlet property="objSegundo" destination="O3T-Lk-gpF" id="QGN-LS-0Zv"/>
+                <outlet property="objTercero" destination="9I6-EG-egp" id="AJj-cJ-gRc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3T-Lk-gpF">
+                    <rect key="frame" x="110" y="0.0" width="100" height="10"/>
+                    <color key="backgroundColor" red="0.98431378599999997" green="0.99607849120000003" blue="0.0039215688589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0ML-6h-UQ8"/>
+                        <constraint firstAttribute="height" constant="10" id="sUf-hy-AQ7"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.conerradius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-TC-RV9">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="10"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ijk-12-9AB"/>
+                        <constraint firstAttribute="height" constant="10" id="pAI-5B-Ndf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.conerr">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9I6-EG-egp">
+                    <rect key="frame" x="220" y="0.0" width="100" height="10"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5dQ-3c-mt4"/>
+                        <constraint firstAttribute="height" constant="10" id="x9d-WG-8Ln"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie4-aA-KcA">
+                    <rect key="frame" x="0.0" y="30" width="304" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oAi-TC-RV9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MKo-Ia-HCE"/>
+                <constraint firstItem="O3T-Lk-gpF" firstAttribute="leading" secondItem="oAi-TC-RV9" secondAttribute="trailing" constant="10" id="OS1-Li-tTk"/>
+                <constraint firstItem="Ie4-aA-KcA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qln-Fq-RK7"/>
+                <constraint firstItem="9I6-EG-egp" firstAttribute="leading" secondItem="O3T-Lk-gpF" secondAttribute="trailing" constant="10" id="Tdz-4U-7bs"/>
+                <constraint firstItem="Ie4-aA-KcA" firstAttribute="top" secondItem="O3T-Lk-gpF" secondAttribute="bottom" constant="20" id="Vss-3c-454"/>
+                <constraint firstItem="9I6-EG-egp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hzC-D7-qyh"/>
+                <constraint firstItem="O3T-Lk-gpF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="miE-2o-3JI"/>
+                <constraint firstItem="oAi-TC-RV9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pIj-gh-a6p"/>
+                <constraint firstAttribute="trailing" secondItem="Ie4-aA-KcA" secondAttribute="trailing" id="yza-8M-PTK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="147.82608695652175" y="2.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
